@@ -1,20 +1,20 @@
-Get request has single request to db table with user data and has nearly 5_000_000 rows.
+<b> Get request has single request to db table with user data and has nearly 5_000_000 rows. </b>
 
-Get from db:
+<b>Get from db:</b>
 
-./siege -c10  -d1s -t60s -b --verbose -f .\getUrls  
-Transactions:                   1157 hits  
-\Availability:                100.00 %  
-Elapsed time:                 199.78 secs  
-Data transferred:               0.26 MB  
-Response time:                  1.72 secs  
-Transaction rate:               5.79 trans/sec  
-Throughput:                     0.00 MB/sec  
-Concurrency:                    9.94  
-Successful transactions:        1157  
-Failed transactions:               0  
-Longest transaction:            4.11  
-Shortest transaction:           0.69  
+./siege -c10  -d1s -t60s -b --verbose -f .\getUrls
+Transactions:                   1157 hits  <br>
+\Availability:                100.00 %  <br>
+Elapsed time:                 199.78 secs  <br>
+Data transferred:               0.26 MB  <br>
+Response time:                  1.72 secs  <br>
+Transaction rate:               5.79 trans/sec  <br>
+Throughput:                     0.00 MB/sec  <br>
+Concurrency:                    9.94  <br>
+Successful transactions:        1157  <br>
+Failed transactions:               0  <br>
+Longest transaction:            4.11  <br>
+Shortest transaction:           0.69 
 
 ./siege -c25  -d1s -t60s -b --verbose -f .\getUrls  
 Transactions:                   1064 hits  
@@ -45,7 +45,7 @@ Longest transaction:           17.56
 Shortest transaction:           0.65  
 
 
-Get from cache with lock for single key update:
+<b> Get from cache with lock for single key update: </b>
 
 ./siege -c10  -d1s -t200s -b --verbose -f .\getCachedUrls  
 Transactions:                  71312 hits  
@@ -89,7 +89,7 @@ Failed transactions:               0
 Longest transaction:            4.19  
 Shortest transaction:           0.00  
 
-Get from cache with lock for single key update and probabilistic early expiration:
+<b>Get from cache with lock for single key update and probabilistic early expiration: </b>
 
 ./siege -c10  -d1s -t200s -b --verbose -f .\getCachedProbabilityUrls  
 Transactions:                  73056 hits  
