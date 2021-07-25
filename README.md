@@ -30,7 +30,6 @@ Failed transactions:               0
 Longest transaction:            7.79  
 Shortest transaction:           0.92  
 
-
 ./siege -c50  -d1s -t200s -b --verbose -f .\getUrls  
 Transactions:                   1076 hits  
 Availability:                 100.00 %  
@@ -61,6 +60,7 @@ Successful transactions:       71313
 Failed transactions:               0  
 Longest transaction:            1.05  
 Shortest transaction:           0.00  
+
 ./siege -c25  -d1s -t200s -b --verbose -f .\getCachedUrls  
 Transactions:                  77455 hits  
 \Availability:                100.00 %  
@@ -74,6 +74,7 @@ Successful transactions:       77458
 Failed transactions:               0  
 Longest transaction:            2.74  
 Shortest transaction:           0.00  
+
 ./siege -c50  -d1s -t200s -b --verbose -f .\getCachedUrls  
 Transactions:                  83549 hits  
 \Availability:                100.00 %  
@@ -103,6 +104,7 @@ Successful transactions:       73056
 Failed transactions:               0  
 Longest transaction:            1.05  
 Shortest transaction:           0.00  
+
 ./siege -c25  -d1s -t200s -b --verbose -f .\getCachedProbabilityUrls  
 Transactions:                 117954 hits  
 \Availability:                100.00 %  
@@ -116,6 +118,7 @@ Successful transactions:      117954
 Failed transactions:               0  
 Longest transaction:            2.38  
 Shortest transaction:           0.00  
+
 ./siege -c50  -d1s -t200s -b --verbose -f .\getCachedProbabilityUrls  
 Transactions:                 101020 hits  
 \Availability:                100.00 %  
