@@ -88,7 +88,7 @@ Failed transactions:               0
 Longest transaction:            4.19  
 Shortest transaction:           0.00  
 
-Get with cache with lock for single key update and probabilistic early expiration:
+Get from cache with lock for single key update and probabilistic early expiration:
 
 ./siege -c10  -d1s -t200s -b --verbose -f .\getCachedProbabilityUrls  
 Transactions:                  73056 hits  
