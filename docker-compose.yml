@@ -1,0 +1,32 @@
+version: "3"
+services:
+
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: test
+    ports:
+      - 5432:5432
+  redis:
+    container_name: redis
+    image: "redis:alpine"
+    command: redis-server --requirepass admin
+    ports:
+      - 6379:6379
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+#  app1:
+#    container_name: app1
+#    environment:
+#      - "SPRING_PROFILES_ACTIVE=stage"
+#    links:
+#      - mongo
+#      - elasticsearch
+#    expose:
+#      - 8080
+#    image: supperapp:0.0.7
